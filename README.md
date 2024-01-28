@@ -1,9 +1,29 @@
-# React + Vite
+# ATM Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A banking application built with React, Vite, UUID, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a banking application that allows users to manage their account balance, deposit money, and withdraw money in the minimum number of notes possible.
+
+## Features
+
+1. **Account Balance**: Display the current account balance to the user.
+2. **Deposit Money**: Allow users to deposit money by selecting the denomination and entering the number of notes.
+3. **Withdraw Money**: Enable users to withdraw money by entering the desired amount, ensuring the availability of funds and dispensing the minimum number of notes.
+
+## Installation
+
+1. Clone the repository:
+2. Install dependencies:
+
+npm install
+
+## Usage
+
+1. Start the development server:
+
+npm run dev
+
+2. Access the application at `http://localhost:5173`.# atm-simulator
 # atm-simulator
