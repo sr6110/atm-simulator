@@ -35,12 +35,11 @@ function Withdraw({ accountBalance, setAccountBalance, handleTransaction }) {
             Object.entries(denominations)
                 .map(([denom, count]) => [
                     denom,
-                    count - notesToDispense.find((note) => note.denom === parseInt(denom))?.count || 0
+                    count - (notesToDispense.find((note) => note.denom === parseInt(denom))?.count ?? 0)
                 ])
         );
     }
 
-    console.log('withdraw', withdrawAmount, setDispensedNotesList);
 
     const handleWithdraw = () => {
         const amount = withdrawAmount;
@@ -52,7 +51,6 @@ function Withdraw({ accountBalance, setAccountBalance, handleTransaction }) {
 
 
         const result = dispenseNotes(amount, denominations);
-        console.log('result', result);
         if (result) {
             setLocalStorageItem(LOCAL_STORAGE_KEYS.DENOMINATIONS, updateAvailableNotes(denominations, result));
             setAccountBalance(accountBalance - amount);

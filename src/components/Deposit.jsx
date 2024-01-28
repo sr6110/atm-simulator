@@ -12,7 +12,6 @@ const Deposit = ({ setAccountBalance, handleTransaction }) => {
         if (amount <= 0) {
             return;
         }
-        console.log('Deposit', amount);
         setAccountBalance(prevBalance => prevBalance + amount);
         setIsDepositCompleted(true);
         const getPrevBalance = getLocalStorageItem(LOCAL_STORAGE_KEYS.ACCOUNT_BALANCE) ?? 0;
@@ -24,10 +23,8 @@ const Deposit = ({ setAccountBalance, handleTransaction }) => {
     function updateDenominations(current, updated) {
         const result = {};
 
-        console.log(current, updated);
         for (let key in current) {
             if (current.hasOwnProperty(key)) {
-                console.log('denominations', typeof current[key], typeof updated[key])
                 result[key] = (parseInt(current[key]) || 0) + (parseInt(updated[key]) || 0);
             }
         }

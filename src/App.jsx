@@ -38,8 +38,6 @@ function App() {
     setCurrentView(view)
   }
 
-  console.log('goToView', currentView);
-
   return (
     <div className='h-screen bg-blue-200 flex flex-col justify-center items-center p-2'>
       <div className='flex flex-col items-center'>
