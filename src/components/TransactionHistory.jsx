@@ -13,7 +13,7 @@ function TransactionHistory({ transactions }) {
     return (
         <div className="bg-blue-200 p-4 mb-4">
             <h2 className="text-xl font-bold mb-2">Transaction History</h2>
-            <div className='overflow-x-auto'>
+            <div className='overflow-x-auto -mx-4 w-screen max-w-screen-sm'>
                 <table className="min-w-full">
                     <thead>
                         <tr role='row'>
