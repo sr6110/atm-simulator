@@ -2,6 +2,8 @@
 
 A banking application built with React, Vite, UUID, and Tailwind CSS.
 
+[ATM Simulator](https://atm-simulator-react.netlify.app/)
+
 ## About
 
 This project is a banking application that allows users to manage their account balance, deposit money, and withdraw money in the minimum number of notes possible.
@@ -25,6 +27,4 @@ npm install
 
 npm run dev
 
-2. Access the application at `http://localhost:5173`.# atm-simulator
-# atm-simulator
-# atm-simulator
+2. Access the application at `http://localhost:5173`.
