@@ -27,4 +27,4 @@ npm install
 
 npm run dev
 
-2. Access the application at `http://localhost:5173`.
+2. Access the application at `http://localhost:5173`.# atm-simulator
